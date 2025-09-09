@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 // Third-party imports
-import { CiFacebook, CiInstagram, CiTwitter } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+import { FaXTwitter } from "react-icons/fa6";
 
 // Local imports
 import { SocialIcon } from "./social-icon";
@@ -19,16 +20,12 @@ export const Navbar = () => {
       {/* Social links */}
       <div className="flex gap-2">
         <SocialIcon
-          Icon={CiTwitter}
-          href="/"
-        />
-        <SocialIcon
-          Icon={CiFacebook}
-          href="/"
+          Icon={FaXTwitter}
+          href="https://x.com/tipmanna"
         />
         <SocialIcon
           Icon={CiInstagram}
-          href="/"
+          href="https://instagram.com/tipmanna"
         />
       </div>
     </nav>
