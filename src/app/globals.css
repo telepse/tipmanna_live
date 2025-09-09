@@ -112,8 +112,28 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.dotted-bg {
+  background: black;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 100px 100px;
+}
+
+.racing_sans_one {
+  font-family: var(--font-racing);
+}
+
+.open_sans {
+  font-family: var(--font-open-sans);
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
+}
+
 @theme {
-  --color-brand: #ff6900;
+  --color-brand: #f57d11;
+  --color-topaz: #f7c87c;
+  --color-moonstone-blue: #7aadcc;
 }
 
 @layer base {

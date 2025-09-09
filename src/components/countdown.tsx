@@ -40,7 +40,7 @@ export const Countdown = ({ targetDate }: CountdownProps) => {
   }, [targetDate]);
 
   return (
-    <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
+    <div className="grid grid-cols-4 gap-4">
       <Timeleft
         value={timeLeft.days}
         label="days"

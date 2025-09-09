@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Racing_Sans_One, Open_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 
 // Components import
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const racingSansOne = Racing_Sans_One({
+  variable: "--font-racing",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -29,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[#111418] text-white antialiased`}
+        className={`${racingSansOne.variable} ${openSans.variable} ${montserrat.variable} dotted-bg bg-black text-white antialiased`}
       >
         <Navbar />
         {children}
